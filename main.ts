@@ -1,6 +1,6 @@
 let projectile: Sprite = null
 scene.setBackgroundColor(1)
-let mySprite3 = sprites.create(img`
+let mySprite2 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . 2 2 2 . . . . . . . 
@@ -19,10 +19,9 @@ let mySprite3 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
 game.onUpdateInterval(1000, function () {
-    let mySprite: Sprite = null
-    projectile = sprites.createProjectileFromSprite(assets.image`bee`, mySprite, randint(-25, 25), randint(-25, 25))
+    projectile = sprites.createProjectileFromSprite(assets.image`bee`, mySprite2, randint(-25, 25), randint(-25, 25))
     projectile.lifespan = 3000
-    if (projectile.vx < 0) {
+    if (0 < 0) {
         projectile.image.flipX()
     }
 })
